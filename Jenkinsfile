@@ -5,7 +5,7 @@ pipeline {​
             steps {​
                 sh "ls -al" ​
 				import jenkins.model.*
-                jenkins = Jenkins.instance
+				jenkins = Jenkins.instance
             }​
         }​
     }​
