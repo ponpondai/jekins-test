@@ -4,8 +4,6 @@ pipeline {​
         stage('hello') {​
             steps {​
                 sh "ls -al" ​
-                import jenkins.model.*
-                jenkins = Jenkins.instance
             }​
         }​
     }​
