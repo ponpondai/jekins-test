@@ -3,8 +3,16 @@ pipeline {​
     stages {​
         stage('hello') {​
             steps {​
-                sh "ls -al" ​
+                script{
+                    jenkins = Jenkins.instance
+                    import jenkins.model.*
+                }
             }​
-        }​
+        }
+        stage('world') {
+            steps {
+                sh "ls -al"
+            }
+        }
     }​
 }​
