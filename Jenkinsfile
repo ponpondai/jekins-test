@@ -1,10 +1,10 @@
-pipeline {​
-    agent { label 'master' }​
-    stages {​
-        stage('hello') {​
-            steps {​
-                sh "ls -al" ​
-            }​
-        }​
-    }​
-}​
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Hello World!"
+            }
+        }
+    }
+}
